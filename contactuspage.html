@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://github.com/dp7477/WebDesignProject/blob/main/india_map.jpg?raw=true">
+    <title>contact us</title>
+</head>
+<body>
+    <!--header section-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/project_html/homepage.html" target="_self">Home</a></li>
+                <li><a href="http://127.0.0.1:3000/project_html/culturepage.html" target="_self">Culture</a></li>
+                <li><a href="http://127.0.0.1:3002/project_html/landmarkpage.html" target="_self">Ladmarks</a></li>
+                <li><a href="http://127.0.0.1:3002/project_html/cuisinepage.html" target="_self">Cuisine</a></li>
+                <li><a href="http://127.0.0.1:3002/project_html/contactuspage.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--main section-->
+    <main>
+        <h1>Contact Us</h1>
+        <p>Please fill out the form below for any inquiries or to register as a student.</p>
+        
+        <!--section for form-->
+        <section>
+            <form action="./homepage.html">
+                <h3>Student Registration Form :</h3>
+                <table>
+                    <tr>
+                        <td><label for="first">First Name :*</label></td>
+                        <td><input type="text" id="first" placeholder="Enter Your First Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password :*</label></td>
+                        <td><input type="password" id="pass" placeholder="Enter Your Password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender :</label></td>
+                        <td><input type="radio" id="male">
+                            <label for="male">Male</label></td>
+                        <td><input type="radio" id="female">
+                            <label for="female">Female</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subscribe">Subscribe to Newsletter :</label></td>
+                        <td><input type="checkbox" id="subscribe">
+                    </tr>
+                    <tr>
+                        <td><label for="state">State :*</label></td>
+                        <td><select id="state" required>
+                            <option value="">Select Your State</option>
+                            <option value="">Gujarat</option>
+                            <option value="">Maharashtra</option>
+                            <option value="">Goa</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="resume">Upload Resume :*</label></td>
+                        <td><input type="file" id="resume" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address :*</label></td>
+                        <td><textarea name="address" id="address" placeholder="Enter Your Address" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birth">Date Of Birth :*</label></td>
+                        <td><input type="date" id="birth"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="time">Preferred Interview Time :</label></td>
+                        <td><input type="time" id="time"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="marks">Marks :</label></td>
+                        <td><input type="number" id="marks" placeholder="Enter Your Marks"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="submit"></label></td>
+                        <td><input type="submit" id="submit"></td>
+                        <td><label for="reset"></label></td>
+                        <td><input type="reset" id="reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        
+        <!--section for more information-->
+        <section>
+            <h2>More Information :</h2>
+            <p>Explore government job opportunities on the official OJAS website :</p>
+            <iframe src="https://ojas.gujarat.gov.in/" frameborder="1" allowfullscreen></iframe>
+        </section>
+    </main>
+    
+    <!--footer section-->
+    <footer>
+        <section>
+            <p><a href="http://127.0.0.1:3000/project_html/homepage.html" target="_self">&#8592 Back to Home</a></p>
+            <p>Contact us on <a href="mailto:info@incredibleindia.com">info@incredibleindia.com</a></p>
+            <p>&copy;2025 Incredible India Project.</p>
+        </section>
+    </footer>
+</body>
+</html>
