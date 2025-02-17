@@ -6,12 +6,14 @@
     <link rel="icon" type="image/x-icon" href="https://github.com/dp7477/WebDesignProject/blob/main/india_map.jpg?raw=true">
     <title>Culture page</title>
     <style>
+        body {
+            background-color: aqua;
+        }
         header {
             background-color: #606c38;
-            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
             text-align: center;
-            font-family: 'Poppins', sans-serif;
-            padding: 20px;
         }
         a {
             text-decoration: none;
@@ -33,12 +35,21 @@
             max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
-            font-family: 'Roboto', sans-serif;
-
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+            color: blue;
+            text-decoration: underline blueviolet;
         }
         h2 {
-            color: #ff6f00;
-            text-decoration: underline orange;
+            color:brown;
+            text-decoration: chartreuse underline;
+            text-align: center;
+        }
+        h3 {
             text-align: center;
         }
         ul {
@@ -51,35 +62,41 @@
             border: 2px solid black;
             border-radius: 10px;
         }
+        img:hover {
+            box-shadow: 5px 5px 10px black;
+            width: 300px;
+        }
         figcaption {
             font-style: italic;
-            text-align: center;
             color:brown;
         }
         p {
             padding-left: 10px;
         }
-        .about_india {
-            border: 2px solid black;
-            background-color: #283618;
-            border-radius: 10px;
-            margin-bottom: 10px;
+        table {
+            text-align: center;
+            padding-left: 400px;
+            padding-bottom: 20px;
         }
-        .landmarks {
+        summary {
+            text-align: center;
+            border: 2px solid black;
+        }
+        .festivals {
             border: 2px solid black;
             background-color: #fefae0;
             border-radius: 10px;
             margin-bottom: 10px;
         }
-        .culture {
+        .languages {
             border: 2px solid black;
-            background-color: #dda15e;
+            background-color: #bc6c25;
             border-radius: 10px;
             margin-bottom: 10px;
         }
-        .cuisine {
+        .attire {
             border: 2px solid black;
-            background-color: #bc6c25;
+            background-color: #dda15e;
             border-radius: 10px;
         }
         footer {
@@ -100,24 +117,26 @@
 </head>
 <body>
     <!--navigation menu-->
-    <nav>
-        <ul>
-            <li><a href="http://127.0.0.1:3000/project_html/homepage.html" target="_self">Home</a></li>
-            <li><a href="http://127.0.0.1:3000/project_html/culturepage.html" target="_self">Culture</a></li>
-            <li><a href="http://127.0.0.1:3002/project_html/landmarkpage.html">Landmarks</a></li>
-            <li><a href="http://127.0.0.1:3002/project_html/cuisinepage.html">Cuisine</a></li>
-            <li><a href="http://127.0.0.1:3002/project_html/contactuspage.html">Contact us</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/project_html/homepage.html" target="_self">Home</a></li>
+                <li><a href="http://127.0.0.1:3000/project_html/culturepage.html" target="_self">Culture</a></li>
+                <li><a href="http://127.0.0.1:3002/project_html/landmarkpage.html">Landmarks</a></li>
+                <li><a href="http://127.0.0.1:3002/project_html/cuisinepage.html">Cuisine</a></li>
+                <li><a href="http://127.0.0.1:3002/project_html/contactuspage.html">Contact us</a></li>
+            </ul>
+        </nav>
     
     <!--main content-->
-    <main>
         <!--section for indian culture-->
         <h1>Indian Culture</h1>
         <p>Discover The Rich And Diverse Culture Of India, a land of unity in diversity.</p>
+    </header>
 
         <!--section about festivals-->
-        <section>
+        <main>
+        <div class="festivals">
             <h2>Festivals :</h2>
             <p>India celebrates a variety of festivals that reflect its rich cultural heritage and religious diversity :</p>
             <ul>
@@ -130,10 +149,10 @@
                 <img src="https://github.com/dp7477/WebDesignProject/blob/main/diwali.jpg?raw=true" alt="Diwali" title="Diwali">
                 <figcaption>Diwali, the festival of light.</figcaption>
             </figure>
-        </section>
+        </div>
         
         <!--section for languages-->
-        <section>
+        <div class="languages">
             <h2>Languages :</h2>
             <p>India is a linguistic treasure trove with 22 officially recognized languages and thousands of regional dialects :</p>
             <h3>Popular languages of India :</h3>
@@ -168,10 +187,10 @@
                 <p>Hindi is the 2nd most spoken language in the world (ahead of English and Spanish), Bengali the 7th most and 
                     Punjabi the 10th most.</p>
             </details>
-        </section>
+        </div>
         
         <!--section for traditional attire-->
-        <section>
+        <div class="attire">
             <h2>Traditional Attire :</h2>
             <p>Indian traditional clothing varies by region, showcasing its cultural diversity :</p>
             <ul>
@@ -184,7 +203,7 @@
                 <img src="https://github.com/dp7477/WebDesignProject/blob/main/saree.jpg?raw=true" alt="saree" title="saree">
                 <figcaption>Traditional Saree - Grace and Elegance</figcaption>
             </figure>
-        </sectio>
+        </div>
     </main>
     
     <!--footer section-->
