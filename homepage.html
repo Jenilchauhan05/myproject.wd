@@ -7,7 +7,7 @@
     <title>home page</title>
     <style>
         body {
-            background : linear-gradient(orange, white, green) ;
+            background : linear-gradient(orange, white, green);
         }
         header {
             background-color: #606c38;
@@ -17,6 +17,11 @@
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             padding: 20px;
+            transform: translateY(-100px);
+            animation: slideDown 1s ease-out forwards;
+        }
+        @keyframes slideDown {
+            to { transform: translateY(0); }
         }
         a {
             text-decoration: none;
@@ -44,6 +49,7 @@
             color: brown;
             text-decoration: underline orange;
             text-align: center;
+            
         }
         ul {
             padding-left: 50px;
@@ -53,11 +59,13 @@
         }
         img {
             border: 2px solid black;
-            border-radius: 10px;
+            border-radius: 10px; 
+            cursor: pointer;
+            transition: transform 0.3s;
         }
         img:hover {
             box-shadow: 5px 5px 10px black;
-            width: 300px;
+            transform: scale(1.1);
         }
         figcaption {
             font-style: italic;
@@ -89,6 +97,13 @@
             background-color: #bc6c25;
             border-radius: 10px;
         }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .about_india, .landmarks, .culture, .cuisine {
+            animation: fadeIn 2s ease;
+        }
         footer {
             background-color: black;
             color: white;
@@ -105,7 +120,8 @@
         }
         @media (max-width : 700px) {
             body {
-                background : radial-gradient(orange, white, green) ;
+                background : radial-gradient(orange, white, green);
+                text-align: center;
             }
             header {
                 padding: 10px;
